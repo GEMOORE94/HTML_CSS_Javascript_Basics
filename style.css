@@ -1,0 +1,265 @@
+body {
+	font-family: 'sans-serif', sans-serif;
+	background: #ffe2d8;
+	color: #001f3f;
+}
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #e7b5b5;
+}
+/* Navbar links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #291a0a;
+  text-align: center;
+  font-weight: bold;
+  padding: 16px 16px;
+  text-decoration: none;
+  margin: 8px;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ffbe90;
+  color: black;
+}
+
+/*Sign up button */ 
+.topnav button { 
+  float: left;
+  display: block;
+  color: #3b4754;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-colour:black;
+  padding: 12px 20px;
+  text-decoration: none;
+  background-color: #fcffc5;
+  border-radius: 10px;
+  margin: 10px;
+  width: 150px;
+}
+.topnav button:hover {
+  background-color: #da252d;
+  color: black;
+}
+/* Style the header */
+head {
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #f0a0a0;
+  font-weight: bold;
+  padding: 5px;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the text*/
+h1, h2, h3, h4 {
+	font-family: 'sans-serif', monospace;
+}
+
+.quote {
+	font-style: italic;
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.container > div {
+	margin: 20px auto;
+}
+
+.intro {
+	text-align: center;
+}
+
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+	text-align: center;
+	text-decoration: none
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+.projects-heading {
+	text-align: center;	
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.project-image {
+	border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.project-image:hover {
+	filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+.project-image-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.project-image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+.links-and-contact {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+.links {
+	justify-self: center;
+}
+
+.links-list {
+	list-style: none;
+	padding: 0;
+}
+
+.profile-picture {
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover {
+	box-shadow: 0 8px 12px 0 rgba(34,60,80,.16);
+}
+
+
+form input, textarea {
+	padding: 5px;
+	border-radius: 5px;
+	width: 240px;
+}
+
+form {
+	width: 250px;
+	margin: 0 auto;
+}
+
+form input[type="submit"] {
+	width: 250px;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	.projects-grid {
+		grid-template-columns: 100%;
+	}
+
+	.links-and-contact {
+		grid-template-columns: 100%;
+	}
+}
+
+
+html {
+  height: 22%;
+}
+
+body {
+  background: #fde2d8;
+  color: #d4b5b5(0, 0%, 100%);
+  margin: 0;
+  min-height:95%;
+  height: 55%;
+  position: sticky;
+
+}
+
+.hub {
+  display: block;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 9vw;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hub span:nth-child(2) {
+  background: #ffbe90;
+  color: #000000;
+  border-radius: 1vw;
+  padding: 0 1vw 1vw 1vw;
+  display: inline-block;
+}
+
+feature-icon {
+background-color: #ffbe90;
+}
